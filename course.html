@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Categories | Youdemi</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/font/font.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header (same as index.html) -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="145" height="27" alt="Youdemi home" />
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="145" height="27" alt="Youdemi home" />
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link title-sm">Home</a></li>
+          <li><a href="course.html" class="navbar-link title-sm">Courses</a></li>
+          <li><a href="blog.html" class="navbar-link title-sm">Blog</a></li>
+          <li><a href="#" class="navbar-link title-sm">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <!-- Course Categories Section -->
+  <main>
+    <section class="section category has-bg-image" aria-labelledby="category-label"
+      style="background-image: url('./assets/images/category-bg.png')">
+      <div class="container">
+
+        <p class="title-sm text-center section-subtitle" id="category-label">Course Categories</p>
+
+        <h2 class="headline-md text-center section-title">
+          Browse Top <span class="span has-after">Categories</span>
+        </h2>
+
+        <ul class="grid-list">
+
+          <!-- Repeat for each category -->
+          <li>
+            <div class="card category-card">
+              <div class="card-icon">
+                <img src="./assets/images/category-1.svg" width="72" height="72" loading="lazy" alt="Data Science icon" />
+              </div>
+              <div>
+                <h3 class="title-lg">Data Science</h3>
+                <p class="title-sm">68 Courses</p>
+              </div>
+              <a href="datascience.html" class="layer-link" aria-label="Data Science Category"></a>
+            </div>
+          </li>
+
+           <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-2.svg" width="72" height="72" loading="lazy"
+                    alt="UI/UX Design icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">UI/UX Design</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="UI/UX Design Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="72" height="72" loading="lazy"
+                    alt="Modern Physics icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Modern Physics</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Modern Physics Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-4.svg" width="72" height="72" loading="lazy"
+                    alt="Music Production icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Music Production</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Music Production Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-5.svg" width="72" height="72" loading="lazy"
+                    alt="Data Science icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Data Science</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Data Science Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-6.svg" width="72" height="72" loading="lazy" alt="Finances icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Finances</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Finances Category"></a>
+
+              </div>
+            </li>
+
+        </ul>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <!-- Reuse same footer from index.html -->
+    <!-- You can paste the entire footer content here from index.html -->
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

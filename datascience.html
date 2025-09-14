@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Science Videos</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Data Science Video Library</h1>
+  </header>
+
+  <main class="video-gallery">
+    <section>
+      <h2>Available Videos</h2>
+      <div class="video-grid">
+        <div class="video-item" onclick="playVideo('assets/images/vid1.mp4')">
+        <img src="assets/image/video1.jpg" alt="Video 1">
+        <p>Introduction to Data Science</p>
+        </div>
+        <div id="video-player" style="display:none; margin-top: 2rem;">
+        <video id="video" width="100%" height="auto" controls>
+        <source id="video-source" src="assets/images/vid1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        </div>
+
+
+        <div class="video-item">
+          <img src="assets/image/video2.jpg" alt="Video 2">
+          <p>Python for Data Science</p>
+        </div>
+        <div class="video-item">
+          <img src="assets/image/video3.jpg" alt="Video 3">
+          <p>Data Visualization Techniques</p>
+        </div>
+        <!-- Add more thumbnails as needed -->
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .video-gallery {
+      padding: 2rem;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .video-item {
+      text-align: center;
+    }
+    .video-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+  function playVideo(videoPath) {
+    const videoPlayer = document.getElementById('video-player');
+    const videoSource = document.getElementById('video-source');
+    const video = document.getElementById('video');
+
+    videoSource.src = videoPath;
+    video.load();
+    videoPlayer.style.display = 'block';
+    video.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+
+</body>
+</html>
